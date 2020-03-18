@@ -8,16 +8,16 @@ The Google Glass will be a user interface and the smarthphone will process the d
 
 ### Project Architecture
 
-![Project Architecture](https://github.com/thechallenged/BlindAssistant/blob/develop/Diagrams/processing-model.png "Project Architecture")
+![Project Architecture](Diagrams/processing-model.png "Project Architecture")
 
 
 ## Devices
 
 **Smarthphone-side**:
-[README](https://github.com/thechallenged/BlindAssistant/blob/master/BlindAssistant-Smarthphone-side/README.md)
+[README](BlindAssistant-Smarthphone-side/README.md)
 
 **GoogleGlass-side**:
-[README](https://github.com/thechallenged/BlindAssistant/blob/master/BlindAssistant-GoogleGlass-side/README.md)
+[README](BlindAssistant-GoogleGlass-side/README.md)
 
 ## Dependencies
 
