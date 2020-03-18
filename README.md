@@ -23,6 +23,8 @@ The Google Glass will be a user interface and the smarthphone will process the d
 
 * Java with version >= Java 1.8.\*
 * AndroidStudio 
+* Android API Level <= 28 for Smarthphone side
+* Android API Level <= 19 for GoogleGlass side
 
 
-##
+
