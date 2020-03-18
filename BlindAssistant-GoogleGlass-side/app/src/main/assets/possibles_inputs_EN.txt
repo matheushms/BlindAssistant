@@ -1,0 +1,16 @@
+in horizontal
+in vertical
+largest
+smaller
+first
+second
+third
+fourth
+fifth
+sixth
+seventh
+eight
+ninth
+repeat
+yes
+no

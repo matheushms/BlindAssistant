@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ToBlindPeopleImersion</string>
+    <string name="title_activity_main">Hello World Immersion</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_speech">Hello World Immersion</string>
+
+    <string name="voice_start_command">Voice commands</string>
+    <string name="voice_command_test">Say "Okay, Glass"</string>
+    <string name="show_me_dogs">Dogs</string>
+    <string name="labrador">labrador</string>
+    <string name="golden">golden</string>
+    <string name="show_me_cats">Cats</string>
+    <string name="cheshire">cheshire</string>
+    <string name="calico">calico</string>
+</resources>
