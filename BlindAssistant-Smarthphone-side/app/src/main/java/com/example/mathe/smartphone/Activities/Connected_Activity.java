@@ -1,10 +1,10 @@
-package com.example.mathe.smarthphone.Activities;
+package com.example.mathe.smartphone.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.mathe.smarthphone.R;
+import com.example.mathe.smartphone.R;
 
 public class Connected_Activity extends AppCompatActivity {
 

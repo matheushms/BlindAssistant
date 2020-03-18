@@ -1,4 +1,4 @@
-package com.example.mathe.smarthphone;
+package com.example.mathe.smartphone;
 
 public interface Constants {
     //Handler Contants
@@ -24,12 +24,6 @@ public interface Constants {
     byte ERROR = 0;
     byte OK = 1;
 
-    /*  public final static String MODEL_FILE =
-            "file:///android_asset/tensorflow_inception_graph.pb";
-    ;
-    public final static String LABEL_FILE =
-            "file:///android_asset/imagenet_comp_graph_label_strings_pt_br.txt";
-*/
      public final static String MODEL_FILE =
             "file:///android_asset/ssd_mobilenet_v1_android_export.pb";
     ;

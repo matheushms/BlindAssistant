@@ -1,4 +1,4 @@
-package com.example.mathe.smarthphone.Bluetooth;
+package com.example.mathe.smartphone.Bluetooth;
 
 
 import android.bluetooth.BluetoothAdapter;

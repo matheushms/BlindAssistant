@@ -1,4 +1,4 @@
-package com.example.mathe.smarthphone.TextRecognition;
+package com.example.mathe.smartphone.TextRecognition;
 
 import android.content.Context;
 import android.graphics.Bitmap;

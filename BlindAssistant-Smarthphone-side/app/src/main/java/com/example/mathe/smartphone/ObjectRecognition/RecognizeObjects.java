@@ -1,4 +1,4 @@
-package com.example.mathe.smarthphone.ObjectRecognition;
+package com.example.mathe.smartphone.ObjectRecognition;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -12,7 +12,7 @@ import org.tensorflow.demo.Classifier;
 
 import org.tensorflow.demo.TensorFlowObjectDetectionAPIModel;
 
-import com.example.mathe.smarthphone.Constants;
+import com.example.mathe.smartphone.Constants;
 
 import java.util.ArrayList;
 import java.util.List;

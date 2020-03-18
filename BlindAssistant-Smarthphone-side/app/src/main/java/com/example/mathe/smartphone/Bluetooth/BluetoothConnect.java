@@ -1,12 +1,10 @@
-package com.example.mathe.smarthphone.Bluetooth;
+package com.example.mathe.smartphone.Bluetooth;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.util.Log;
-
-import com.example.mathe.smarthphone.Data;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,4 +1,4 @@
-package com.example.mathe.smarthphone.Activities;
+package com.example.mathe.smartphone.Activities;
 
 import android.app.Application;
 

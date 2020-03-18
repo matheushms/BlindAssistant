@@ -1,7 +1,6 @@
-package com.example.mathe.smarthphone.Utils;
+package com.example.mathe.smartphone.Utils;
 
 import android.content.Context;
-import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;

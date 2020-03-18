@@ -1,14 +1,14 @@
-package com.example.mathe.smarthphone.Bluetooth;
+package com.example.mathe.smartphone.Bluetooth;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.RectF;
 import android.util.Log;
 
-import com.example.mathe.smarthphone.Constants;
-import com.example.mathe.smarthphone.ObjectRecognition.RecognizeObjects;
-import com.example.mathe.smarthphone.TextRecognition.TextRecognition;
-import com.example.mathe.smarthphone.Utils.Util;
+import com.example.mathe.smartphone.Constants;
+import com.example.mathe.smartphone.ObjectRecognition.RecognizeObjects;
+import com.example.mathe.smartphone.TextRecognition.TextRecognition;
+import com.example.mathe.smartphone.Utils.Util;
 
 import org.tensorflow.demo.Classifier;
 

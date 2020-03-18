@@ -1,4 +1,4 @@
-package com.example.mathe.smarthphone.Activities;
+package com.example.mathe.smartphone.Activities;
 
 import android.annotation.SuppressLint;
 import android.app.Service;
@@ -13,18 +13,15 @@ import android.os.Message;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
-import com.example.mathe.smarthphone.Bluetooth.BluetoothController;
-import com.example.mathe.smarthphone.Bluetooth.ClientClass;
-import com.example.mathe.smarthphone.Constants;
-import com.example.mathe.smarthphone.Data;
-import com.example.mathe.smarthphone.ObjectRecognition.RecognizeObjects;
-import com.example.mathe.smarthphone.Bluetooth.BluetoothConnect;
-import com.example.mathe.smarthphone.Speak;
-import com.example.mathe.smarthphone.TextRecognition.TextRecognition;
-import com.example.mathe.smarthphone.Utils.Util;
+import com.example.mathe.smartphone.Bluetooth.BluetoothController;
+import com.example.mathe.smartphone.Bluetooth.ClientClass;
+import com.example.mathe.smartphone.Constants;
+import com.example.mathe.smartphone.ObjectRecognition.RecognizeObjects;
+import com.example.mathe.smartphone.Speak;
+import com.example.mathe.smartphone.TextRecognition.TextRecognition;
+import com.example.mathe.smartphone.Utils.Util;
 
 import org.tensorflow.demo.Classifier;
-import org.tensorflow.demo.env.ImageUtils;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -134,19 +131,11 @@ if(intent != null) {
 
                     double resolutionAverage =Math.sqrt(Util.media(resolution));
 
-
-
-                    Log.d("bluetooth","OBJECT RECOGNITION -> COUNT: "+count+" TIME: "+time+" AVERAGE: "+ Util.media(listTimes)
-                            +" STANDARD DEVIATION: "+Util.desviopadrao(listTimes));
-                    Log.d("bluetooth","TEXT RECOGNITION -> COUNT: "+count+" TIME: "+time+" AVERAGE: "+ Util.media(listTimes2)
-                            +" STANDARD DEVIATION: "+Util.desviopadrao(listTimes2) + " AVERAGE RESOLUTION: "+resolutionAverage+"x"+resolutionAverage);
-                        Log.d("bluetooth","RESULTADO>>>> "+result);
                         byte[] datam = Util.stringToByte(result);
                         datam = ClientClass.createHeader(operation,datam);
                         try{
                             OutputStream outputStream = bluetoothController.getSocket().getOutputStream();
                             outputStream.write(datam);
-                            Log.d("bluetooth",">>>>>>>>>>>>>>>>>>>>>>>>>>>ENVIADO<<<<<<<<<<<<<<<<<<<<<<<<<");
                             // tts.speak(, TextToSpeech.QUEUE_ADD, null);
                         }catch (IOException e){
                             e.printStackTrace();
@@ -170,11 +159,8 @@ if(intent != null) {
 
                         try{
 
-                            if(bluetoothController.getSocket() == null)
-                                 Log.d("bluetooth",">>>>>>>>>>>>>>>>>>>>>>>>>>socket está null<<<<<<<<<<<<<<<<<<<<<<<<<");
                             OutputStream outputStream = bluetoothController.getSocket().getOutputStream();
                             outputStream.write(datam);
-                            Log.d("bluetooth",">>>>>>>>>>>>>>>>>>>>>>>>>>>ENVIADO<<<<<<<<<<<<<<<<<<<<<<<<<");
                             // tts.speak(, TextToSpeech.QUEUE_ADD, null);
                         }catch (IOException e){
                             e.printStackTrace();
@@ -184,13 +170,11 @@ if(intent != null) {
                     else if(operation == Constants.OPERATION_RECOGNIZE_TEXT_IN_OBJECT){
 
                     String result = recognize.recognizeObjects(bitmap);
-                        Log.d("bluetooth","RESULTADO>>>> "+result);
                         byte[] datam = Util.stringToByte(result);
                         datam = ClientClass.createHeader(Constants.OPERATION_RECOGNIZE_TEXT_IN_OBJECT,datam);
                         try{
                             OutputStream outputStream = bluetoothController.getSocket().getOutputStream();
                             outputStream.write(datam);
-                            Log.d("bluetooth",">>>>>>>>>>>>>>>>>>>>>>>>>>>ENVIADO<<<<<<<<<<<<<<<<<<<<<<<<<");
                             // tts.speak(, TextToSpeech.QUEUE_ADD, null);
                         }catch (IOException e){
                             e.printStackTrace();
@@ -206,14 +190,12 @@ if(intent != null) {
                     double time = ((double)(finalTime - inTime))/(double)1000 ;
                     listTimes2.add(time);
                     count2++;
-                    Log.d("bluetooth","COUNT: "+count+" TIME: "+time+" AVERAGE: "+ Util.media(listTimes2)
-                            +" STANDARD DEVIATION: "+Util.desviopadrao(listTimes2));
 
                         String result = recognition.textrecognition(bitmap,getApplicationContext());
                         if(result.equals("")){
                             result = "não há texto";
                         }
-                        Log.d("bluetooth",result);
+
                         byte[] datam = Util.stringToByte(result);
                         datam = ClientClass.createHeader(operation,datam);
                         try{

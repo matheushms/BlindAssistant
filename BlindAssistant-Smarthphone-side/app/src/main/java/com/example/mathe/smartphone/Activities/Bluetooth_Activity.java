@@ -1,4 +1,4 @@
-package com.example.mathe.smarthphone.Activities;
+package com.example.mathe.smartphone.Activities;
 
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
@@ -23,11 +23,11 @@ import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.example.mathe.smarthphone.Bluetooth.Device;
-import com.example.mathe.smarthphone.Bluetooth.Test;
-import com.example.mathe.smarthphone.Constants;
-import com.example.mathe.smarthphone.Data;
-import com.example.mathe.smarthphone.R;
+import com.example.mathe.smartphone.Bluetooth.Device;
+import com.example.mathe.smartphone.Bluetooth.Test;
+import com.example.mathe.smartphone.Constants;
+import com.example.mathe.smartphone.Data;
+import com.example.mathe.smartphone.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -142,7 +142,9 @@ public class Bluetooth_Activity extends AppCompatActivity {
 
             if (action.equals(BluetoothDevice.ACTION_FOUND)){
                 BluetoothDevice device = intent.getParcelableExtra (BluetoothDevice.EXTRA_DEVICE);
-                detectedStrings.add(device.getName()+"\n"+device.getAddress());
+                String detectedString = device.getName()+"\n"+device.getAddress();
+                if(!detectedStrings.contains(detectedStrings))
+                    detectedStrings.add(detectedString);
                 ArrayAdapter<String> detectedArrayAdapter = new ArrayAdapter<String>(context,android.R.layout.simple_list_item_1,detectedStrings);
                 detectedDevicesView.setAdapter(detectedArrayAdapter);
 
@@ -159,7 +161,9 @@ public class Bluetooth_Activity extends AppCompatActivity {
         Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
         if(true){
             for(BluetoothDevice device : pairedDevices) {
-                pairedStrings.add(device.getName() + "\n" + device.getAddress());
+                String pairedDevice = device.getName() + "\n" + device.getAddress();
+                if(!pairedStrings.contains(pairedDevice))
+                    pairedStrings.add(pairedDevice);
             }
         }
         ArrayAdapter<String> pairedArrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,pairedStrings);
@@ -221,7 +225,7 @@ public class Bluetooth_Activity extends AppCompatActivity {
 
 
         Test test = new Test(this);
-        test.test();
+        //test.test();
 
         detectedDevicesView = (ListView)findViewById(R.id.detectedDevices);
         Button btAtualizar = (Button)findViewById(R.id.btAtualizar);
