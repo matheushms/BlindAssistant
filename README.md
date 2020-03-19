@@ -14,11 +14,15 @@ The Google Glass will be a user interface and the smarthphone will process the d
 
 ## Google Glass Side
 
-This device is responsible for the user interface. The user will be able to send a command by voice or by tapping its sensor to have the system perform one of the two operations described in the project architecture sketch just above.
+This device is responsible for the user interface. The user will be able to send a command by voice or by tapping its sensor to have the system perform one of the two operations described in the project architecture sketch just above. 
+
+It also has the purpose of capturing images that are being observed by the user and sent to Google Glass when a command is triggered.
 
 
 ## Smartphone Side
+The Smartphone is responsible for the processing of images by Google Glass that are sent via Bluetooth. It will process the images both by OCR and by the object detector.
 
+Through it the user can select Google Glass to perform the pairing.
 
 ## Dependencies
 
