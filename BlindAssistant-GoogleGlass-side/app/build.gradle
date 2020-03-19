@@ -12,7 +12,7 @@ android {
     buildToolsVersion "28.0.2"
 
     defaultConfig {
-        applicationId "com.mhms.poliprojects.toblindpeopleimersion"
+        applicationId "com.blindassistant.googleglass"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1

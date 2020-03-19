@@ -24,10 +24,10 @@
         android:icon="@drawable/ic_glass_logo"
         android:label="@string/app_name"
 
-        android:name="com.mhms.poliprojects.toblindpeopleimersion.Main.CustomApplication">
+        android:name="com.blindassistant.googleglass.Main.CustomApplication">
 
         <activity
-            android:name="com.mhms.poliprojects.toblindpeopleimersion.Main.ContextualMenuActivity"
+            android:name="com.blindassistant.googleglass.Main.ContextualMenuActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
@@ -38,7 +38,7 @@
                 android:resource="@xml/voice_trigger" />
         </activity>
         <activity
-            android:name="com.mhms.poliprojects.toblindpeopleimersion.Main.SpeechActivity"
+            android:name="com.blindassistant.googleglass.Main.SpeechActivity"
             />
     </application>
 </manifest>

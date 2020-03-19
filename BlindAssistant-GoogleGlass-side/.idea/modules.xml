@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ToBlindPeopleImersion.iml" filepath="$PROJECT_DIR$/ToBlindPeopleImersion.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BlindAssistant-GoogleGlass-side.iml" filepath="$PROJECT_DIR$/BlindAssistant-GoogleGlass-side.iml" group="BlindAssistant-GoogleGlass-side" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="BlindAssistant-GoogleGlass-side/app" />
     </modules>
   </component>
 </project>
