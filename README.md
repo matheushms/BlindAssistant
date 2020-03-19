@@ -32,7 +32,6 @@ Through it the user can select Google Glass to perform the pairing.
 
 ## AndroidStudio Configuration
 
-* Open AndroidStudio and import the project.
 * Configure the sdk through the SDK manager. Click in File> Settings> System Settings> Android SDK and in the SDK Platform and SDK Tools tabs perform the following configuration:
 
 ![SDK Platform Glass](Diagrams/sdk-plataform-googleglass.png "SDK Platform Glass")
@@ -44,7 +43,8 @@ Through it the user can select Google Glass to perform the pairing.
 * Click in Apply, download and install the packages, and click in Ok.
 
 ## Install Projects in Devices
-
+* Open AndroidStudio and import the project;
+* Sync Project with Gradle files;
 * Click in Run> run'app' and select device or build project and install the apk files in devices.
 
 
